@@ -30,25 +30,34 @@
                      SelectionMode="Single" 
                      SelectionChanged="ListBox_SelectionChanged">
                     <ListBoxItem>
-                        <StackPanel Orientation="Horizontal">
+                        <StackPanel Name="homePanel" Orientation="Horizontal" Tapped="homePanel_Tapped">
+                            <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="36" Text="&#xEA8A;"/>
+                            <TextBlock Text=" Home" FontSize="24" Margin="20,0,0,0"/>
+                        </StackPanel>
+                    </ListBoxItem>
+                    <ListBoxItem>
+                        <StackPanel Name="charactersPanel" Orientation="Horizontal" Tapped="charactersPanel_Tapped">
                             <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="36" Text="&#xE13D;" />
-                            <TextBlock Text=" Characters" FontSize="36" />
+                            <TextBlock Text=" Characters" FontSize="24" Margin="20,0,0,0" />
                         </StackPanel>
                     </ListBoxItem>
                     <ListBoxItem>
-                        <StackPanel Orientation="Horizontal">
+                        <StackPanel Name="booksPanel" Orientation="Horizontal" Tapped="booksPanel_Tapped">
                             <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="36" Text="&#xE8F1;" />
-                            <TextBlock Text=" Books" FontSize="36" />
+                            <TextBlock Text=" Books" FontSize="24" Margin="20,0,0,0"/>
                         </StackPanel>
                     </ListBoxItem>
                     <ListBoxItem>
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="36" Text="&#xEA8A;" />
-                            <TextBlock Text=" Houses" FontSize="36" />
+                        <StackPanel Name="kingdomsPanel" Orientation="Horizontal" Tapped="kingdomsPanel_Tapped">
+                            <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="36" Text="&#x265A;" />
+                            <TextBlock Text=" Kingdoms" FontSize="24" Margin="20,0,0,0"/>
                         </StackPanel>
                     </ListBoxItem>
                 </ListBox>
             </SplitView.Pane>
         </SplitView>
+        <Frame Name="ViewFrame">
+            
+        </Frame>
     </Grid>
 </Page>
