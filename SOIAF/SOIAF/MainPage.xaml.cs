@@ -25,6 +25,7 @@ namespace SOIAF
         public MainPage()
         {
             this.InitializeComponent();
+            //ViewFrame.Navigate(typeof(View.HomeView));
         }
 
         private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -35,6 +36,36 @@ namespace SOIAF
         private void HamMenuActivator_Click(object sender, RoutedEventArgs e)
         {
             SplitView.IsPaneOpen = !SplitView.IsPaneOpen;
+        }
+
+        private void StackPanel_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+
+        }
+
+        private void StackPanel_Tapped_1(object sender, TappedRoutedEventArgs e)
+        {
+
+        }
+
+        private void homePanel_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            ViewFrame.Navigate(typeof(View.HomeView));
+        }
+
+        private void charactersPanel_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            ViewFrame.Navigate(typeof(View.CharactersView));
+        }
+
+        private void booksPanel_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            ViewFrame.Navigate(typeof(View.BooksView));
+        }
+
+        private void kingdomsPanel_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            ViewFrame.Navigate(typeof(View.KingdomsView));
         }
     }
 }
