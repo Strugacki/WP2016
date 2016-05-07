@@ -25,7 +25,7 @@ namespace SOIAF
         public MainPage()
         {
             this.InitializeComponent();
-            //ViewFrame.Navigate(typeof(View.HomeView));
+            ViewFrame.Navigate(typeof(View.HomeView));
         }
 
         private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
