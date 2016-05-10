@@ -7,7 +7,11 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+    <Grid>
+        <StackPanel>
+            <TextBlock Text="Kingdom Name: " Height="30" Width="263" FontSize="18" HorizontalAlignment="Left" Padding="70,0,0,0"/>
+            <TextBox Name="KingdomToSearch" Height="30" HorizontalAlignment="Left" Width="263"/>
+            <Button Name="SearchKingdoms" Content="Search" Height="30" Width="263" FontSize="12"/>
+        </StackPanel>
     </Grid>
 </Page>

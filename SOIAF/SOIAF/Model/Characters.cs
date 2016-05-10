@@ -170,6 +170,10 @@
                 OnPropertyChanged("PlayedBy");
             }
         }
+        public Characters()
+        {
+
+        }
 
         public Characters(string name, string culture, string born, string died, string[] titles, string[] aliases, string father, string mother, string[] allegiances, string[] tvSeries, string[] playedBy)
         {

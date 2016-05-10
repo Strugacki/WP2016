@@ -25,7 +25,7 @@ namespace SOIAF
         public MainPage()
         {
             this.InitializeComponent();
-            ViewFrame.Navigate(typeof(View.HomeView));
+            View.Navigate(typeof(View.HomeView));
         }
 
         private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -50,22 +50,22 @@ namespace SOIAF
 
         private void homePanel_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            ViewFrame.Navigate(typeof(View.HomeView));
+            View.Navigate(typeof(View.HomeView));
         }
 
         private void charactersPanel_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            ViewFrame.Navigate(typeof(View.CharactersView));
+            View.Navigate(typeof(View.CharactersView));
         }
 
         private void booksPanel_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            ViewFrame.Navigate(typeof(View.BooksView));
+            View.Navigate(typeof(View.BooksView));
         }
 
         private void kingdomsPanel_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            ViewFrame.Navigate(typeof(View.KingdomsView));
+            View.Navigate(typeof(View.KingdomsView));
         }
     }
 }
