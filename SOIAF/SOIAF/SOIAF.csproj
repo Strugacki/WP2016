@@ -118,15 +118,6 @@
     <Compile Include="View\KingdomsView.xaml.cs">
       <DependentUpon>KingdomsView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\SearchBooksView.xaml.cs">
-      <DependentUpon>SearchBooksView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\SearchCharactersView.xaml.cs">
-      <DependentUpon>SearchCharactersView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\SearchKingdomsView.xaml.cs">
-      <DependentUpon>SearchKingdomsView.xaml</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -166,18 +157,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\KingdomsView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\SearchBooksView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\SearchCharactersView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\SearchKingdomsView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
